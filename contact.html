@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Akshiya Vaibhavi Saravanan | Data Scientist &amp; ML Engineer</title>
+  <meta name="description"
+    content="Get in touch with Akshiya Vaibhavi Saravanan — MS Data Science student at Northeastern University. Open to collaborations, research, and opportunities." />
+  <meta name="author" content="Akshiya Vaibhavi Saravanan" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══ SCROLL PROGRESS BAR ══ -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ══ CUSTOM CURSOR ══ -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ══ NAVIGATION ══ (identical to index.html) -->
+  <header>
+    <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" id="nav-logo" aria-label="Akshiya home">
+          <span>&lt;</span>akshiya<span>/&gt;</span>
+        </a>
+
+        <div class="nav-links" id="nav-links" role="list">
+          <a href="index.html#education" class="nav-link" id="nav-education" role="listitem">Education</a>
+          <a href="index.html#skills" class="nav-link" id="nav-skills" role="listitem">Skills</a>
+          <a href="index.html#experience" class="nav-link" id="nav-experience" role="listitem">Experience</a>
+          <a href="index.html#projects" class="nav-link" id="nav-projects" role="listitem">Projects</a>
+          <a href="index.html#certifications" class="nav-link" id="nav-certs" role="listitem">Certs</a>
+          <a href="contact.html" class="nav-cta active" id="nav-contact">Contact Me →</a>
+        </div>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══ MOBILE MENU ══ -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html#education" class="nav-link" id="mm-education" onclick="closeMobileMenu()">Education</a>
+    <a href="index.html#skills" class="nav-link" id="mm-skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="index.html#experience" class="nav-link" id="mm-experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="index.html#projects" class="nav-link" id="mm-projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="index.html#certifications" class="nav-link" id="mm-certs" onclick="closeMobileMenu()">Certifications</a>
+    <a href="contact.html" class="nav-cta" id="mm-contact">Contact Me →</a>
+  </div>
+
+  <!-- ══ MAIN CONTENT ══ -->
+  <main>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero" aria-labelledby="contact-page-heading">
+      <div class="container contact-hero-inner">
+        <p class="section-label" id="ch-label">// get in touch</p>
+        <h1 class="hero-name" id="contact-page-heading" style="font-size:clamp(2.2rem,6vw,3.8rem)">
+          Let's Build<br />Something Great
+        </h1>
+        <p class="hero-role" id="ch-role" style="max-width:520px;line-height:1.7">
+          Whether it's a research collaboration, a data science opportunity, or just a friendly conversation about ML —
+          my inbox is always open.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" aria-labelledby="form-heading">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Left: Info Panel -->
+          <aside class="contact-info" aria-label="Contact information">
+
+            <!-- Profile photo from web -->
+            <img id="contact-photo" class="contact-photo"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=400&fit=crop&crop=face"
+              alt="Data scientist at work — collaborative technology environment" loading="lazy"
+              onerror="this.style.display='none'" />
+
+            <div id="ci-heading">
+              <h2 class="contact-info-heading" id="form-heading">Reach Out</h2>
+              <p class="contact-info-text">
+                I'm Akshiya — a data scientist, ML engineer, and lifelong learner.
+                Let's connect and explore how data can solve real problems together.
+              </p>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-info-item" id="ci-email">
+              <div class="contact-info-icon">✉</div>
+              <div>
+                <p class="contact-info-label">Email</p>
+                <a href="mailto:saravanan.ak@northeastern.edu" class="contact-info-value">
+                  saravanan.ak@northeastern.edu
+                </a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-info-item" id="ci-phone">
+              <div class="contact-info-icon">📱</div>
+              <div>
+                <p class="contact-info-label">Phone</p>
+                <a href="tel:+18573976030" class="contact-info-value">+1 (857) 397-6030</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-info-item" id="ci-location">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <p class="contact-info-label">Location</p>
+                <p class="contact-info-value">Boston, MA, USA</p>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-info-item" id="ci-linkedin">
+              <div class="contact-info-icon">in</div>
+              <div>
+                <p class="contact-info-label">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/akshiya-vaibhavi-saravanan-/"
+                class="contact-info-value"
+                target="_blank"
+                rel="noopener noreferrer">
+                linkedin.com/in/akshiya-vaibhavi-saravanan-
+              </a>
+            </div>
+
+          </aside>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-wrap" id="form-wrap">
+            <form id="contact-form" novalidate aria-label="Contact form">
+
+              <!-- Name + Email row -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Full Name *</label>
+                  <input type="text" id="form-name" name="from_name" class="form-input" placeholder="Jane Doe"
+                    autocomplete="name" aria-describedby="error-name" required />
+                  <span class="form-error" id="error-name" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address *</label>
+                  <input type="email" id="form-email" name="from_email" class="form-input"
+                    placeholder="jane@example.com" autocomplete="email" aria-describedby="error-email" required />
+                  <span class="form-error" id="error-email" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject *</label>
+                <input type="text" id="form-subject" name="subject" class="form-input"
+                  placeholder="Research collaboration / Job opportunity / Say hi!" aria-describedby="error-subject"
+                  required />
+                <span class="form-error" id="error-subject" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message *</label>
+                <textarea id="form-message" name="message" class="form-textarea"
+                  placeholder="Tell me what's on your mind…" aria-describedby="error-message" required></textarea>
+                <span class="form-error" id="error-message" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-submit" aria-label="Send message">
+                <!-- Default text -->
+                <span class="btn-text" id="btn-text">Send Message ✉</span>
+
+                <!-- Loading state (spinner) -->
+                <span class="btn-loading" id="btn-loading" aria-hidden="true">
+                  <span class="spinner"></span>
+                  &nbsp;Sending…
+                </span>
+
+                <!-- Success state -->
+                <span class="btn-success" id="btn-success" aria-hidden="true">
+                  ✓ Sent!
+                </span>
+
+                <!-- Error state -->
+                <span class="btn-error" id="btn-error" aria-hidden="true">
+                  ✕ Try Again
+                </span>
+              </button>
+
+            </form>
+          </div><!-- .contact-form-wrap -->
+
+        </div><!-- .contact-layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ (identical to index.html) -->
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-social">
+        <a href="mailto:saravanan.ak@northeastern.edu" class="social-icon" aria-label="Email" title="Email">✉</a>
+        <a href="tel:+18573976030" class="social-icon" aria-label="Phone" title="Phone">📱</a>
+        <a href="#" class="social-icon" aria-label="LinkedIn" title="LinkedIn">in</a>
+      </div>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="index.html#education" class="footer-link">Education</a>
+        <a href="index.html#skills" class="footer-link">Skills</a>
+        <a href="index.html#experience" class="footer-link">Experience</a>
+        <a href="index.html#projects" class="footer-link">Projects</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2025 Akshiya Vaibhavi Saravanan &nbsp;·&nbsp; Boston, MA
+      </p>
+    </div>
+  </footer>
+
+  <!-- ══ GSAP CDN ══ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- ══ BACK TO TOP BUTTON ══ -->
+  <button id="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
+
+  <!-- ══ SHARED SCRIPT ══ -->
+  <script src="script.js"></script>
+
+  <!-- ══ CONTACT PAGE SCRIPT ══ -->
+  <script src="contact.js"></script>
+</body>
+
+</html>
