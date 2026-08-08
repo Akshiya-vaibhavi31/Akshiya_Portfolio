@@ -159,12 +159,45 @@
             <!-- Glow backdrop -->
             <div class="photo-glow" aria-hidden="true"></div>
 
-            <!-- The photo itself — swap src to your image -->
-            <div class="photo-circle" id="photo-circle">
-              <img src="assets/photo.jpeg" alt="Akshiya Vaibhavi Saravanan" id="hero-photo"
-                onerror="this.parentElement.classList.add('photo-placeholder')" />
-              <!-- Shown if photo file is missing -->
-              <div class="photo-initials" aria-hidden="true">AVS</div>
+           <!-- Tech/Skill icons collage instead of photo -->
+            <div class="photo-circle" id="photo-circle" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg, var(--clr-accent)15, #a855f715);">
+              <svg viewBox="0 0 240 240" width="90%" height="90%" aria-label="Tech skills collage">
+                <!-- Python -->
+                <g transform="translate(50,40)">
+                  <rect x="-38" y="-18" width="76" height="36" rx="18" fill="var(--clr-accent)" opacity="0.9"/>
+                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">Python</text>
+                </g>
+                <!-- SQL -->
+                <g transform="translate(180,55)">
+                  <rect x="-32" y="-18" width="64" height="36" rx="18" fill="#a855f7" opacity="0.9"/>
+                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">SQL</text>
+                </g>
+                <!-- ML -->
+                <g transform="translate(40,120)">
+                  <rect x="-28" y="-18" width="56" height="36" rx="18" fill="#22c55e" opacity="0.9"/>
+                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">ML</text>
+                </g>
+                <!-- AI -->
+                <g transform="translate(150,140)">
+                  <rect x="-26" y="-18" width="52" height="36" rx="18" fill="#f59e0b" opacity="0.9"/>
+                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">AI</text>
+                </g>
+                <!-- Deep Learning -->
+                <g transform="translate(100,190)">
+                  <rect x="-58" y="-18" width="116" height="36" rx="18" fill="var(--clr-accent)" opacity="0.9"/>
+                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Deep Learning</text>
+                </g>
+                <!-- Power BI -->
+                <g transform="translate(200,190)">
+                  <rect x="-42" y="-18" width="84" height="36" rx="18" fill="#ef4444" opacity="0.9"/>
+                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Power BI</text>
+                </g>
+                <!-- Docker -->
+                <g transform="translate(30,190)">
+                  <rect x="-36" y="-18" width="72" height="36" rx="18" fill="#3b82f6" opacity="0.9"/>
+                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Docker</text>
+                </g>
+              </svg>
             </div>
 
             <!-- Floating skill badge chips around the frame -->
