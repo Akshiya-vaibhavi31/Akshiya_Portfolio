@@ -90,12 +90,31 @@
           <!-- Left: Info Panel -->
           <aside class="contact-info" aria-label="Contact information">
 
-            <!-- Profile photo from web -->
-            <img id="contact-photo" class="contact-photo"
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=400&fit=crop&crop=face"
-              alt="Data scientist at work — collaborative technology environment" loading="lazy"
-              onerror="this.style.display='none'" />
-
+            <!-- Tech/Skill icons collage instead of photo -->
+<div id="contact-photo" class="contact-photo" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg, var(--clr-accent-dim), rgba(168,85,247,0.08));">
+  <svg viewBox="0 0 240 240" width="85%" height="85%" aria-label="Tech skills collage">
+    <g transform="translate(50,40)">
+      <rect x="-38" y="-18" width="76" height="36" rx="18" fill="var(--clr-accent)" opacity="0.9"/>
+      <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">Python</text>
+    </g>
+    <g transform="translate(180,55)">
+      <rect x="-32" y="-18" width="64" height="36" rx="18" fill="#a855f7" opacity="0.9"/>
+      <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">SQL</text>
+    </g>
+    <g transform="translate(40,120)">
+      <rect x="-28" y="-18" width="56" height="36" rx="18" fill="#22c55e" opacity="0.9"/>
+      <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">ML</text>
+    </g>
+    <g transform="translate(150,140)">
+      <rect x="-26" y="-18" width="52" height="36" rx="18" fill="#f59e0b" opacity="0.9"/>
+      <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">AI</text>
+    </g>
+    <g transform="translate(100,190)">
+      <rect x="-58" y="-18" width="116" height="36" rx="18" fill="var(--clr-accent)" opacity="0.9"/>
+      <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Deep Learning</text>
+    </g>
+  </svg>
+</div>
             <div id="ci-heading">
               <h2 class="contact-info-heading" id="form-heading">Reach Out</h2>
               <p class="contact-info-text">
