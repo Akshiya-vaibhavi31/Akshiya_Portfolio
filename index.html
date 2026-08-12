@@ -1,462 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akshiya Vaibhavi Saravanan | Data Scientist &amp; ML Engineer</title>
-  <meta name="description"
-    content="Personal portfolio of Akshiya Vaibhavi Saravanan — MS Data Science student at Northeastern University, Boston. Data Scientist &amp; Machine Learning Engineer specializing in ML, deep learning, and data analytics." />
+  <meta name="description" content="Personal portfolio of Akshiya Vaibhavi Saravanan — MS Data Science student at Northeastern University, Boston." />
   <meta name="keywords" content="Data Science, Machine Learning, Portfolio, Northeastern University, Python, AI" />
   <meta name="author" content="Akshiya Vaibhavi Saravanan" />
   <meta property="og:title" content="Akshiya Vaibhavi Saravanan | Data Scientist &amp; ML Engineer" />
-  <meta property="og:description"
-    content="Explore the portfolio of Akshiya — an MS Data Science student at Northeastern University." />
+  <meta property="og:description" content="Explore the portfolio of Akshiya — an MS Data Science student at Northeastern University." />
   <meta property="og:type" content="website" />
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap"
-    rel="stylesheet" />
-
-  <!-- Shared stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- ══ SCROLL PROGRESS BAR ══ -->
   <div id="scroll-progress" aria-hidden="true"></div>
-
-  <!-- ══ CUSTOM CURSOR ══ -->
   <div id="cursor-dot" aria-hidden="true"></div>
   <div id="cursor-ring" aria-hidden="true"></div>
 
-  <!-- ══ NAVIGATION ══ -->
   <header>
     <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
       <div class="nav-inner">
-        <!-- Logo -->
         <a href="index.html" class="nav-logo" id="nav-logo" aria-label="Akshiya Vaibhavi Saravanan home">
           <span>&lt;</span>akshiya<span>/&gt;</span>
         </a>
-
-        <!-- Desktop links -->
         <div class="nav-links" id="nav-links" role="list">
           <a href="#education" class="nav-link" id="nav-education" role="listitem">Education</a>
           <a href="#skills" class="nav-link" id="nav-skills" role="listitem">Skills</a>
           <a href="#experience" class="nav-link" id="nav-experience" role="listitem">Experience</a>
           <a href="#projects" class="nav-link" id="nav-projects" role="listitem">Projects</a>
           <a href="#certifications" class="nav-link" id="nav-certs" role="listitem">Certs</a>
-          <a href="contact.html" class="nav-cta" id="nav-contact">Contact Me →</a>
+          <a href="contact.html" class="nav-cta" id="nav-contact">Contact Me &rarr;</a>
         </div>
-
-        <!-- Hamburger (mobile) -->
         <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
       </div>
     </nav>
   </header>
 
-  <!-- ══ MOBILE MENU ══ -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <a href="#education" class="nav-link" id="mm-education" onclick="closeMobileMenu()">Education</a>
     <a href="#skills" class="nav-link" id="mm-skills" onclick="closeMobileMenu()">Skills</a>
     <a href="#experience" class="nav-link" id="mm-experience" onclick="closeMobileMenu()">Experience</a>
     <a href="#projects" class="nav-link" id="mm-projects" onclick="closeMobileMenu()">Projects</a>
     <a href="#certifications" class="nav-link" id="mm-certs" onclick="closeMobileMenu()">Certifications</a>
-    <a href="contact.html" class="nav-cta" id="mm-contact">Contact Me →</a>
+    <a href="contact.html" class="nav-cta" id="mm-contact">Contact Me &rarr;</a>
   </div>
 
-  <!-- ══ MAIN CONTENT ══ -->
   <main>
 
-    <!-- ════════════════════════════════════════
-         HERO SECTION
-         ════════════════════════════════════════ -->
+    <!-- HERO -->
     <section id="hero" aria-label="Introduction">
-
-      <!-- Decorative background blobs -->
-      <div class="blob" style="width:600px;height:600px;background:var(--clr-accent);top:-20%;left:-15%;"
-        aria-hidden="true"></div>
-      <div class="blob" style="width:400px;height:400px;background:#a855f7;bottom:-10%;right:-10%;" aria-hidden="true">
-      </div>
-
+      <div class="blob" style="width:600px;height:600px;background:var(--clr-accent);top:-20%;left:-15%;" aria-hidden="true"></div>
+      <div class="blob" style="width:400px;height:400px;background:#a855f7;bottom:-10%;right:-10%;" aria-hidden="true"></div>
       <div class="container hero-inner">
-
-        <!-- ── LEFT: Hero Text ── -->
         <div class="hero-text">
-         <p class="hero-greeting" id="hero-greeting" style="font-size: 48px; font-weight: bold;">hi I'm 👋</p>
-          <h1 class="hero-name" id="hero-name">
-            Akshiya<br />Vaibhavi<br />Saravanan
-          </h1>
-
-          <p class="hero-role" id="hero-role">
-            Data Scientist &amp; Machine Learning Engineer
-          </p>
-
-          <p class="hero-desc" id="hero-desc">
-            MS Data Science student at <span class="accent">Northeastern University</span>, Boston.
-            Passionate about building intelligent systems — from ML pipelines to computer vision models — turning
-            complex data into actionable insight.
-          </p>
-
+          <p class="hero-greeting" id="hero-greeting" style="font-size:48px;font-weight:bold;">hi I'm 👋</p>
+          <h1 class="hero-name" id="hero-name">Akshiya<br />Vaibhavi<br />Saravanan</h1>
+          <p class="hero-role" id="hero-role">Data Scientist &amp; Machine Learning Engineer</p>
+          <p class="hero-desc" id="hero-desc">MS Data Science student at <span class="accent">Northeastern University</span>, Boston. Passionate about building intelligent systems — from ML pipelines to computer vision models — turning complex data into actionable insight.</p>
           <div class="hero-cta" id="hero-cta">
-            <a href="#projects" class="btn btn-primary" id="btn-projects">
-              View Projects
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </a>
-            <a href="contact.html" class="btn btn-secondary" id="btn-contact-hero">
-              Contact Me
-            </a>
+            <a href="#projects" class="btn btn-primary" id="btn-projects">View Projects <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+            <a href="contact.html" class="btn btn-secondary" id="btn-contact-hero">Contact Me</a>
           </div>
-
-          <!-- Floating location badge -->
           <div id="hero-location" style="display:flex;align-items:center;gap:8px;margin-top:8px;opacity:0;">
-            <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--clr-text-muted);">
-              📍 Boston, MA &nbsp;·&nbsp; Open to opportunities
-            </span>
+            <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--clr-text-muted);">📍 Boston, MA &nbsp;·&nbsp; Open to opportunities</span>
           </div>
         </div>
-
-        <!-- ── RIGHT: Photo Frame + Speech Bubble ── -->
         <div class="hero-character">
-
-          <!-- Speech Bubble -->
           <div class="speech-bubble" id="speech-bubble" aria-live="polite">
             <div class="bubble-text" id="bubble-text"></div>
             <div class="bubble-sub" id="bubble-sub">Data Scientist &amp; ML Engineer</div>
           </div>
-
-          <!--
-            ANIMATED PHOTO FRAME
-            ─────────────────────────────────────────
-            Replace assets/photo.jpg with your actual photo.
-            Recommended: square crop, min 400×400 px.
-            The frame is circular with orbit rings + glow.
-          -->
           <div class="photo-frame-wrap" id="photo-frame-wrap" aria-label="Photo of Akshiya">
-
-            <!-- Outer orbit ring (clockwise) -->
-            <div class="orbit-ring orbit-ring-1" aria-hidden="true">
-              <span class="orbit-emoji">🚀</span>
-            </div>
-
-            <!-- Inner orbit ring (counter-clockwise) -->
-            <div class="orbit-ring orbit-ring-2" aria-hidden="true">
-              <span class="orbit-emoji">💻</span>
-              <span class="orbit-emoji orbit-emoji-2">✨</span>
-            </div>
-
-            <!-- Glow backdrop -->
+            <div class="orbit-ring orbit-ring-1" aria-hidden="true"><span class="orbit-emoji">🚀</span></div>
+            <div class="orbit-ring orbit-ring-2" aria-hidden="true"><span class="orbit-emoji">💻</span><span class="orbit-emoji orbit-emoji-2">✨</span></div>
             <div class="photo-glow" aria-hidden="true"></div>
-
-           <!-- Tech/Skill icons collage instead of photo -->
-            <div class="photo-circle" id="photo-circle" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg, var(--clr-accent)15, #a855f715);">
+            <div class="photo-circle" id="photo-circle" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--clr-accent)15,#a855f715);">
               <svg viewBox="0 0 240 240" width="90%" height="90%" aria-label="Tech skills collage">
-                <!-- Python -->
-                <g transform="translate(50,40)">
-                  <rect x="-38" y="-18" width="76" height="36" rx="18" fill="var(--clr-accent)" opacity="0.9"/>
-                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">Python</text>
-                </g>
-                <!-- SQL -->
-                <g transform="translate(180,55)">
-                  <rect x="-32" y="-18" width="64" height="36" rx="18" fill="#a855f7" opacity="0.9"/>
-                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">SQL</text>
-                </g>
-                <!-- ML -->
-                <g transform="translate(40,120)">
-                  <rect x="-28" y="-18" width="56" height="36" rx="18" fill="#22c55e" opacity="0.9"/>
-                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">ML</text>
-                </g>
-                <!-- AI -->
-                <g transform="translate(150,140)">
-                  <rect x="-26" y="-18" width="52" height="36" rx="18" fill="#f59e0b" opacity="0.9"/>
-                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">AI</text>
-                </g>
-                <!-- Deep Learning -->
-                <g transform="translate(100,190)">
-                  <rect x="-58" y="-18" width="116" height="36" rx="18" fill="var(--clr-accent)" opacity="0.9"/>
-                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Deep Learning</text>
-                </g>
-                <!-- Power BI -->
-                <g transform="translate(200,190)">
-                  <rect x="-42" y="-18" width="84" height="36" rx="18" fill="#ef4444" opacity="0.9"/>
-                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Power BI</text>
-                </g>
-                <!-- Docker -->
-                <g transform="translate(30,190)">
-                  <rect x="-36" y="-18" width="72" height="36" rx="18" fill="#3b82f6" opacity="0.9"/>
-                  <text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Docker</text>
-                </g>
+                <g transform="translate(50,40)"><rect x="-38" y="-18" width="76" height="36" rx="18" fill="var(--clr-accent)" opacity="0.9"/><text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">Python</text></g>
+                <g transform="translate(180,55)"><rect x="-32" y="-18" width="64" height="36" rx="18" fill="#a855f7" opacity="0.9"/><text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">SQL</text></g>
+                <g transform="translate(40,120)"><rect x="-28" y="-18" width="56" height="36" rx="18" fill="#22c55e" opacity="0.9"/><text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">ML</text></g>
+                <g transform="translate(150,140)"><rect x="-26" y="-18" width="52" height="36" rx="18" fill="#f59e0b" opacity="0.9"/><text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="14" font-weight="700" fill="#fff">AI</text></g>
+                <g transform="translate(100,190)"><rect x="-58" y="-18" width="116" height="36" rx="18" fill="var(--clr-accent)" opacity="0.9"/><text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Deep Learning</text></g>
+                <g transform="translate(200,190)"><rect x="-42" y="-18" width="84" height="36" rx="18" fill="#ef4444" opacity="0.9"/><text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Power BI</text></g>
+                <g transform="translate(30,190)"><rect x="-36" y="-18" width="72" height="36" rx="18" fill="#3b82f6" opacity="0.9"/><text x="0" y="6" text-anchor="middle" font-family="var(--font-mono)" font-size="13" font-weight="700" fill="#fff">Docker</text></g>
               </svg>
             </div>
-
-            <!-- Floating skill badge chips around the frame -->
-            <div class="float-badge float-badge-1" aria-hidden="true">
-              <span class="fb-dot"></span> Python
-            </div>
-            <div class="float-badge float-badge-2" aria-hidden="true">
-              <span class="fb-dot"></span> ML / AI
-            </div>
-            <div class="float-badge float-badge-3" aria-hidden="true">
-              <span class="fb-dot"></span> Data Science
-            </div>
-            <div class="float-badge float-badge-4" aria-hidden="true">
-              <span class="fb-dot"></span> Deep Learning
-            </div>
-
-          </div><!-- .photo-frame-wrap -->
-
-
-        </div><!-- .hero-character -->
-      </div><!-- .hero-inner -->
+            <div class="float-badge float-badge-1" aria-hidden="true"><span class="fb-dot"></span> Python</div>
+            <div class="float-badge float-badge-2" aria-hidden="true"><span class="fb-dot"></span> ML / AI</div>
+            <div class="float-badge float-badge-3" aria-hidden="true"><span class="fb-dot"></span> Data Science</div>
+            <div class="float-badge float-badge-4" aria-hidden="true"><span class="fb-dot"></span> Deep Learning</div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- /hero -->
 
-    <!-- ════════════════════════════════════════
-         EDUCATION SECTION
-         ════════════════════════════════════════ -->
+    <!-- EDUCATION -->
     <section id="education" aria-labelledby="edu-heading">
       <div class="container">
         <p class="section-label" data-reveal="fade-left">01.</p>
         <h2 class="section-heading" id="edu-heading" data-reveal="fade-left">Education</h2>
         <div class="section-divider" data-reveal="fade-left"></div>
-
         <div class="timeline" id="edu-timeline">
-
-          <!-- MS Northeastern -->
           <div class="timeline-item" data-reveal="timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
               <p class="timeline-meta">Sep 2025 – Dec 2027 &nbsp;·&nbsp; Boston, MA</p>
               <h3 class="timeline-title">Master of Science — Data Science</h3>
               <p class="timeline-org">Northeastern University, Khoury College of Computer Sciences</p>
-              <p class="timeline-detail">
-                <strong style="color:var(--clr-white)">Coursework:</strong> Algorithms &amp; Data Structures · Machine
-                Learning · Database Management Systems
-              </p>
+              <p class="timeline-detail"><strong style="color:var(--clr-white)">Coursework:</strong> Algorithms &amp; Data Structures · Machine Learning · Database Management Systems</p>
               <span class="timeline-badge">🎓 In Progress</span>
             </div>
           </div>
-
-          <!-- B.Tech Saranathan -->
           <div class="timeline-item" data-reveal="timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
               <p class="timeline-meta">Oct 2021 – May 2025 &nbsp;·&nbsp; India</p>
               <h3 class="timeline-title">B.Tech — Artificial Intelligence &amp; Data Science</h3>
               <p class="timeline-org">Saranathan College of Engineering</p>
-              <p class="timeline-detail">
-                <strong style="color:var(--clr-white)">CGPA:</strong> 8.4 / 10<br />
-                Focused on AI fundamentals, data pipelines, machine learning, and applied mathematics.
-              </p>
+              <p class="timeline-detail"><strong style="color:var(--clr-white)">CGPA:</strong> 8.4 / 10<br />Focused on AI fundamentals, data pipelines, machine learning, and applied mathematics.</p>
               <span class="timeline-badge">✅ Completed</span>
             </div>
           </div>
-
-        </div><!-- .timeline -->
+        </div>
       </div>
     </section>
     <!-- /education -->
 
-    <!-- ════════════════════════════════════════
-         SKILLS SECTION
-         ════════════════════════════════════════ -->
+    <!-- SKILLS -->
     <section id="skills" aria-labelledby="skills-heading">
       <div class="container">
         <p class="section-label" data-reveal="fade-left">02.</p>
         <h2 class="section-heading" id="skills-heading" data-reveal="fade-left">Skills</h2>
         <div class="section-divider" data-reveal="fade-left"></div>
-
         <div class="skills-grid" id="skills-grid">
-
-          <!-- Programming & Querying -->
           <div class="skill-category" data-reveal="scale-in">
             <p class="skill-cat-label">Programming &amp; Querying</p>
-            <div class="skill-pills">
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">SQL</span>
-              <span class="skill-pill">R</span>
-              <span class="skill-pill">Java</span>
-              <span class="skill-pill">C++</span>
-            </div>
+            <div class="skill-pills"><span class="skill-pill">Python</span><span class="skill-pill">SQL</span><span class="skill-pill">R</span><span class="skill-pill">Java</span><span class="skill-pill">C++</span></div>
           </div>
-
-          <!-- Data Analysis -->
           <div class="skill-category" data-reveal="scale-in">
             <p class="skill-cat-label">Data Analysis</p>
-            <div class="skill-pills">
-              <span class="skill-pill">Pandas</span>
-              <span class="skill-pill">NumPy</span>
-              <span class="skill-pill">Data Cleaning</span>
-              <span class="skill-pill">EDA</span>
-              <span class="skill-pill">Feature Engineering</span>
-              <span class="skill-pill">Predictive Modeling</span>
-              <span class="skill-pill">Model Evaluation</span>
-            </div>
+            <div class="skill-pills"><span class="skill-pill">Pandas</span><span class="skill-pill">NumPy</span><span class="skill-pill">Data Cleaning</span><span class="skill-pill">EDA</span><span class="skill-pill">Feature Engineering</span><span class="skill-pill">Predictive Modeling</span><span class="skill-pill">Model Evaluation</span></div>
           </div>
-
-          <!-- ML & Deep Learning -->
           <div class="skill-category" data-reveal="scale-in">
             <p class="skill-cat-label">ML &amp; Deep Learning</p>
-            <div class="skill-pills">
-              <span class="skill-pill">Scikit-learn</span>
-              <span class="skill-pill">Logistic Regression</span>
-              <span class="skill-pill">CNN</span>
-              <span class="skill-pill">RNN</span>
-              <span class="skill-pill">Computer Vision</span>
-              <span class="skill-pill">Image Classification</span>
-            </div>
+            <div class="skill-pills"><span class="skill-pill">Scikit-learn</span><span class="skill-pill">Logistic Regression</span><span class="skill-pill">CNN</span><span class="skill-pill">RNN</span><span class="skill-pill">Computer Vision</span><span class="skill-pill">Image Classification</span></div>
           </div>
-
-          <!-- Data Visualization & BI -->
           <div class="skill-category" data-reveal="scale-in">
             <p class="skill-cat-label">Data Visualization &amp; BI</p>
-            <div class="skill-pills">
-              <span class="skill-pill">Power BI</span>
-              <span class="skill-pill">Excel</span>
-              <span class="skill-pill">Dashboard Dev</span>
-            </div>
+            <div class="skill-pills"><span class="skill-pill">Power BI</span><span class="skill-pill">Excel</span><span class="skill-pill">Dashboard Dev</span></div>
           </div>
-
-          <!-- Databases -->
           <div class="skill-category" data-reveal="scale-in">
             <p class="skill-cat-label">Databases</p>
-            <div class="skill-pills">
-              <span class="skill-pill">PostgreSQL</span>
-              <span class="skill-pill">SQLite</span>
-            </div>
+            <div class="skill-pills"><span class="skill-pill">PostgreSQL</span><span class="skill-pill">SQLite</span></div>
           </div>
-
-          <!-- Tools & Platforms -->
           <div class="skill-category" data-reveal="scale-in">
             <p class="skill-cat-label">Tools &amp; Platforms</p>
-            <div class="skill-pills">
-              <span class="skill-pill">Linux</span>
-              <span class="skill-pill">Git</span>
-              <span class="skill-pill">Docker</span>
-              <span class="skill-pill">Databricks</span>
-              <span class="skill-pill">Django</span>
-              <span class="skill-pill">FastAPI</span>
-              <span class="skill-pill">HTML</span>
-              <span class="skill-pill">CSS</span>
-            </div>
+            <div class="skill-pills"><span class="skill-pill">Linux</span><span class="skill-pill">Git</span><span class="skill-pill">Docker</span><span class="skill-pill">Databricks</span><span class="skill-pill">Django</span><span class="skill-pill">FastAPI</span><span class="skill-pill">HTML</span><span class="skill-pill">CSS</span></div>
           </div>
-
-        </div><!-- .skills-grid -->
+        </div>
       </div>
     </section>
     <!-- /skills -->
 
-    <!-- ════════════════════════════════════════
-         EXPERIENCE SECTION
-         ════════════════════════════════════════ -->
+    <!-- EXPERIENCE -->
     <section id="experience" aria-labelledby="exp-heading">
       <div class="container">
         <p class="section-label" data-reveal="fade-left">03.</p>
         <h2 class="section-heading" id="exp-heading" data-reveal="fade-left">Experience</h2>
         <div class="section-divider" data-reveal="fade-left"></div>
+        <div class="timeline" id="exp-timeline">
 
-       <div class="timeline" id="exp-timeline">
-
-          <!-- TA Northeastern -->
           <div class="timeline-item" data-reveal="timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
               <p class="timeline-meta">Spring 2026 &nbsp;·&nbsp; Boston, MA</p>
               <h3 class="timeline-title">Teaching Assistant — Machine Learning</h3>
               <p class="timeline-org">Northeastern University</p>
-              <p class="timeline-detail">
-                Supported students through complete Python ML workflows, including data preprocessing, feature
-                engineering, model development, and evaluation.
-                Held office hours and one-on-one sessions to help students debug code and understand core ML concepts
-                such as bias-variance tradeoff, cross-validation, and regularization.
-                Graded predictive modeling assignments with detailed, constructive feedback, and communicated complex
-                technical concepts clearly to diverse student cohorts with varying levels of programming experience.
-                Worked closely with the course instructor to refine assignment rubrics and improve course materials
-                based on recurring student questions.
-              </p>
+              <p class="timeline-detail">Supported students through complete Python ML workflows, including data preprocessing, feature engineering, model development, and evaluation. Held office hours and one-on-one sessions to help students debug code and understand core ML concepts such as bias-variance tradeoff, cross-validation, and regularization. Graded predictive modeling assignments with detailed, constructive feedback, and communicated complex technical concepts clearly to diverse student cohorts with varying levels of programming experience. Worked closely with the course instructor to refine assignment rubrics and improve course materials based on recurring student questions.</p>
               <span class="timeline-badge">🎓 Academic</span>
             </div>
           </div>
 
-          <!-- KMSC Event Coordinator -->
           <div class="timeline-item" data-reveal="timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
               <p class="timeline-meta">2025 – Present &nbsp;·&nbsp; Boston, MA</p>
               <h3 class="timeline-title">Event Coordinator</h3>
               <p class="timeline-org">KMSC Club, Northeastern University</p>
-              <p class="timeline-detail">
-                Planned and coordinated multiple large-scale club events from concept to execution, managing venue
-                logistics, budgeting, vendor coordination, and event-day operations.
-                Led a team of volunteers to handle registrations, scheduling, and on-site troubleshooting, ensuring
-                every event ran smoothly and on time.
-                Worked closely with fellow club members and university stakeholders to design engaging programming
-                that boosted student turnout and community involvement.
-                Promoted events through social media and campus channels, helping grow attendance and visibility for
-                the club across the student body.
-              </p>
+              <p class="timeline-detail">Planned and coordinated multiple large-scale club events from concept to execution, managing venue logistics, budgeting, vendor coordination, and event-day operations. Led a team of volunteers to handle registrations, scheduling, and on-site troubleshooting, ensuring every event ran smoothly and on time. Worked closely with fellow club members and university stakeholders to design engaging programming that boosted student turnout and community involvement. Promoted events through social media and campus channels, helping grow attendance and visibility for the club across the student body.</p>
               <span class="timeline-badge">🎉 Leadership</span>
             </div>
           </div>
 
-          <!-- Gradtwin Intern -->
           <div class="timeline-item" data-reveal="timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
               <p class="timeline-meta">Apr 2025 – Jun 2025 &nbsp;·&nbsp; India</p>
               <h3 class="timeline-title">Data Science Intern</h3>
               <p class="timeline-org">Gradtwin Services Pvt. Ltd.</p>
-              <p class="timeline-detail">
-                Maintained and cleaned healthcare datasets supporting a <strong style="color:var(--clr-white)">Logistic
-                  Regression heart disease prediction</strong> model, ensuring data quality and consistency across
-                multiple sources.
-                Used SQL extensively for data querying, filtering, and joining across relational tables to prepare
-                analysis-ready datasets.
-                Conducted comprehensive exploratory data analysis (EDA) using Python, Pandas, and NumPy to uncover
-                patterns and correlations relevant to disease risk factors.
-                Applied feature engineering techniques to improve model input quality, and supported predictive
-                modeling and evaluation across the full ML pipeline, from raw data to final model metrics.
-              </p>
+              <p class="timeline-detail">Maintained and cleaned healthcare datasets supporting a <strong style="color:var(--clr-white)">Logistic Regression heart disease prediction</strong> model, ensuring data quality and consistency across multiple sources. Used SQL extensively for data querying, filtering, and joining across relational tables to prepare analysis-ready datasets. Conducted comprehensive exploratory data analysis (EDA) using Python, Pandas, and NumPy to uncover patterns and correlations relevant to disease risk factors. Applied feature engineering techniques to improve model input quality, and supported predictive modeling and evaluation across the full ML pipeline, from raw data to final model metrics.</p>
               <span class="timeline-badge">💼 Industry</span>
             </div>
           </div>
 
-          <!-- Infilabs Intern -->
           <div class="timeline-item" data-reveal="timeline">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
               <p class="timeline-meta">Jul 2023 – Aug 2023 &nbsp;·&nbsp; India</p>
               <h3 class="timeline-title">AI/ML Intern</h3>
               <p class="timeline-org">Infilabs, Cloud and Beyond</p>
-              <p class="timeline-detail">
-                Contributed to a <strong style="color:var(--clr-white)">computer-vision pneumonia detection</strong>
-                model trained on chest X-ray image data, working alongside a small research-focused team.
-                Explored and experimented with CNN and RNN architectures to compare performance on medical image
-                classification tasks.
-                Assisted with model implementation in Python, including data augmentation and preprocessing of X-ray
-                images to improve training robustness.
-                Supported performance evaluation and debugging efforts, helping identify and resolve issues in model
-                accuracy and training stability under a tight project timeline.
-              </p>
+              <p class="timeline-detail">Contributed to a <strong style="color:var(--clr-white)">computer-vision pneumonia detection</strong> model trained on chest X-ray image data, working alongside a small research-focused team. Explored and experimented with CNN and RNN architectures to compare performance on medical image classification tasks. Assisted with model implementation in Python, including data augmentation and preprocessing of X-ray images to improve training robustness. Supported performance evaluation and debugging efforts, helping identify and resolve issues in model accuracy and training stability under a tight project timeline.</p>
               <span class="timeline-badge">💼 Industry</span>
             </div>
           </div>
 
         </div><!-- .timeline -->
-    <!-- ════════════════════════════════════════
-         PROJECTS SECTION
-         ════════════════════════════════════════ -->
+      </div><!-- .container -->
+    </section>
+    <!-- /experience -->
+
+    <!-- PROJECTS -->
     <section id="projects" aria-labelledby="proj-heading">
       <div class="container">
         <p class="section-label" data-reveal="fade-left">04.</p>
@@ -465,24 +235,17 @@
 
         <div class="projects-grid" id="projects-grid">
 
-          <div class="projects-grid" id="projects-grid">
-
-          <!-- Testimonia -->
+          <!-- Testimonia — 01 -->
           <article class="project-card" id="proj-1" data-reveal="card" aria-label="Testimonia project">
             <p class="project-number">01 / Healthcare AI</p>
             <span class="project-badge">Jun – Aug 2026</span>
             <h3 class="project-title">Testimonia</h3>
             <p class="project-subtitle">Clinical Trial &amp; Medical Literature RAG Assistant</p>
             <p class="project-desc">
-              Citation-grounded RAG system over <strong style="color:var(--clr-white)">585 clinical trials and
-              578 PubMed abstracts</strong> spanning hypertension, type 2 diabetes, and breast cancer.
-              Implemented hybrid retrieval (BM25 + semantic search via Reciprocal Rank Fusion) with
-              cross-encoder reranking, achieving <strong style="color:var(--clr-white)">87% Recall@5</strong>
-              and <strong style="color:var(--clr-white)">90.6% refusal decision accuracy</strong>.
-              Built independent citation verification with <strong style="color:var(--clr-white)">0.0%
-              fabrication rate</strong> across all evaluation runs, including a live-tested defense against
-              prompt injection in retrieved medical documents. Full-stack: FastAPI backend, SQLite persistence,
-              dark-theme frontend, Docker, and GitHub Actions CI/CD validated by an 81-test suite.
+              Citation-grounded RAG system over <strong style="color:var(--clr-white)">585 clinical trials and 578 PubMed abstracts</strong> spanning hypertension, type 2 diabetes, and breast cancer.
+              Implemented hybrid retrieval (BM25 + semantic search via Reciprocal Rank Fusion) with cross-encoder reranking, achieving <strong style="color:var(--clr-white)">87% Recall@5</strong> and <strong style="color:var(--clr-white)">90.6% refusal decision accuracy</strong>.
+              Built independent citation verification with <strong style="color:var(--clr-white)">0.0% fabrication rate</strong> across all evaluation runs, including a live-tested defense against prompt injection in retrieved medical documents.
+              Full-stack: FastAPI backend, SQLite persistence, dark-theme frontend, Docker, and GitHub Actions CI/CD validated by an 81-test suite.
             </p>
             <div class="project-tags">
               <span class="project-tag">Python</span>
@@ -496,16 +259,14 @@
               <span class="project-tag">Healthcare AI</span>
             </div>
             <div style="margin-top:16px;">
-              <a href="https://github.com/Akshiya-vaibhavi31/clinical-rag_Testimonia"
-                 target="_blank"
-                 rel="noopener noreferrer"
+              <a href="https://github.com/Akshiya-vaibhavi31/clinical-rag_Testimonia" target="_blank" rel="noopener noreferrer"
                  style="font-family:var(--font-mono);font-size:0.78rem;color:var(--clr-accent);text-decoration:none;border:1px solid var(--clr-accent);padding:6px 14px;border-radius:6px;">
-                View on GitHub →
+                View on GitHub &rarr;
               </a>
             </div>
           </article>
 
-          <!-- ScholarLens -->
+          <!-- ScholarLens — 02 -->
           <article class="project-card" id="proj-2" data-reveal="card" aria-label="ScholarLens project">
             <p class="project-number">02 / Research Platform</p>
             <span class="project-badge">Sep – Dec 2025</span>
@@ -513,10 +274,8 @@
             <p class="project-subtitle">AI-Powered Research Intelligence Platform</p>
             <p class="project-desc">
               Full-stack research discovery platform built with FastAPI, TypeScript, PostgreSQL, and Docker.
-              Implements a semantic search pipeline using <strong style="color:var(--clr-white)">Sentence Transformers +
-                FAISS</strong> (384-dim embeddings) for similarity retrieval and intelligent paper recommendations.
-              Features PDF text extraction, rich metadata management, REST APIs, database indexing, and intelligent
-              caching.
+              Implements a semantic search pipeline using <strong style="color:var(--clr-white)">Sentence Transformers + FAISS</strong> (384-dim embeddings) for similarity retrieval and intelligent paper recommendations.
+              Features PDF text extraction, rich metadata management, REST APIs, database indexing, and intelligent caching.
             </p>
             <div class="project-tags">
               <span class="project-tag">FastAPI</span>
@@ -528,18 +287,16 @@
             </div>
           </article>
 
-          <!-- Chronic Disease Prediction -->
+          <!-- Chronic Disease Prediction — 03 -->
           <article class="project-card" id="proj-3" data-reveal="card" aria-label="Chronic disease prediction project">
             <p class="project-number">03 / Research Paper</p>
             <span class="project-badge">Jan – Apr 2025</span>
             <h3 class="project-title">Chronic Disease Prediction</h3>
             <p class="project-subtitle">Integrating Clinical &amp; Biochemical Data</p>
             <p class="project-desc">
-              Co-authored conference paper. Integrated multi-source clinical and biochemical datasets to build an ML
-              model for chronic disease prediction.
+              Co-authored conference paper. Integrated multi-source clinical and biochemical datasets to build an ML model for chronic disease prediction.
               Delivered a full pipeline: data cleaning, EDA, feature engineering, and model training with Scikit-learn.
-              Visualized insights and findings through interactive <strong style="color:var(--clr-white)">Power
-                BI</strong> dashboards.
+              Visualized insights and findings through interactive <strong style="color:var(--clr-white)">Power BI</strong> dashboards.
             </p>
             <div class="project-tags">
               <span class="project-tag">Python</span>
@@ -551,19 +308,15 @@
             </div>
           </article>
 
-          <!-- EyeStressDetect -->
+          <!-- EyeStressDetect — 04 -->
           <article class="project-card" id="proj-4" data-reveal="card" aria-label="EyeStressDetect project">
             <p class="project-number">04 / Conference Paper</p>
             <span class="project-badge">Jan – Apr 2024</span>
             <h3 class="project-title">EyeStressDetect</h3>
             <p class="project-subtitle">Eye Gaze-Based Stress Detection (IntelEye)</p>
             <p class="project-desc">
-              Co-authored conference paper proposing <strong style="color:var(--clr-white)">"IntelEye"</strong> — an ML
-              approach for real-time stress classification from eye-gaze telemetry (pupil diameter, fixation duration,
-              fixation dispersion, blink duration) at 60 Hz.
-              Engineered baseline thresholds from calm-video sessions. Used <strong
-                style="color:var(--clr-white)">K-Nearest Neighbors</strong> for classification and gaze-region
-              localization.
+              Co-authored conference paper proposing <strong style="color:var(--clr-white)">"IntelEye"</strong> — an ML approach for real-time stress classification from eye-gaze telemetry (pupil diameter, fixation duration, fixation dispersion, blink duration) at 60 Hz.
+              Engineered baseline thresholds from calm-video sessions. Used <strong style="color:var(--clr-white)">K-Nearest Neighbors</strong> for classification and gaze-region localization.
               Validated statistical significance via Welch two-sample t-test (p &lt; 0.05).
             </p>
             <div class="project-tags">
@@ -576,65 +329,34 @@
           </article>
 
         </div><!-- .projects-grid -->
+      </div><!-- .container -->
+    </section>
     <!-- /projects -->
 
-    <!-- ════════════════════════════════════════
-         CERTIFICATIONS SECTION
-         ════════════════════════════════════════ -->
+    <!-- CERTIFICATIONS -->
     <section id="certifications" aria-labelledby="cert-heading">
       <div class="container">
         <p class="section-label" data-reveal="fade-left">05.</p>
         <h2 class="section-heading" id="cert-heading" data-reveal="fade-left">Certifications</h2>
         <div class="section-divider" data-reveal="fade-left"></div>
-
         <div class="certs-grid" id="certs-grid">
-
-          <div class="cert-card" data-reveal="scale-in">
-            <span class="cert-icon">⚙️</span>
-            <p class="cert-name">Foundations in Databricks</p>
-            <p class="cert-issuer">Databricks</p>
-          </div>
-
-          <div class="cert-card" data-reveal="scale-in">
-            <span class="cert-icon">🏦</span>
-            <p class="cert-name">AI in Banking &amp; Finance</p>
-            <p class="cert-issuer">InLustro</p>
-          </div>
-
-          <div class="cert-card" data-reveal="scale-in">
-            <span class="cert-icon">💊</span>
-            <p class="cert-name">Pharma &amp; Healthcare AI</p>
-            <p class="cert-issuer">InLustro</p>
-          </div>
-
-          <div class="cert-card" data-reveal="scale-in">
-            <span class="cert-icon">🧩</span>
-            <p class="cert-name">Data Structures &amp; Algorithms</p>
-            <p class="cert-issuer">InLustro</p>
-          </div>
-
-        </div><!-- .certs-grid -->
+          <div class="cert-card" data-reveal="scale-in"><span class="cert-icon">⚙️</span><p class="cert-name">Foundations in Databricks</p><p class="cert-issuer">Databricks</p></div>
+          <div class="cert-card" data-reveal="scale-in"><span class="cert-icon">🏦</span><p class="cert-name">AI in Banking &amp; Finance</p><p class="cert-issuer">InLustro</p></div>
+          <div class="cert-card" data-reveal="scale-in"><span class="cert-icon">💊</span><p class="cert-name">Pharma &amp; Healthcare AI</p><p class="cert-issuer">InLustro</p></div>
+          <div class="cert-card" data-reveal="scale-in"><span class="cert-icon">🧩</span><p class="cert-name">Data Structures &amp; Algorithms</p><p class="cert-issuer">InLustro</p></div>
+        </div>
       </div>
     </section>
     <!-- /certifications -->
 
-    <!-- ════════════════════════════════════════
-         CTA / TEASER SECTION
-         ════════════════════════════════════════ -->
+    <!-- CTA -->
     <section id="cta" aria-labelledby="cta-heading">
       <div class="container">
         <div class="cta-inner" id="cta-inner">
           <p class="cta-label" data-reveal="fade-up">06. Let's talk</p>
-          <h2 class="cta-heading" id="cta-heading" data-reveal="fade-up">
-            Have a project<br />in mind?
-          </h2>
-          <p class="cta-sub" data-reveal="fade-up">
-            I'm always excited to explore new opportunities, collaborate on meaningful data problems, and bring ML ideas
-            to life.
-          </p>
-          <a href="contact.html" class="btn btn-primary" id="cta-btn" data-reveal="fade-up">
-            Contact Me →
-          </a>
+          <h2 class="cta-heading" id="cta-heading" data-reveal="fade-up">Have a project<br />in mind?</h2>
+          <p class="cta-sub" data-reveal="fade-up">I'm always excited to explore new opportunities, collaborate on meaningful data problems, and bring ML ideas to life.</p>
+          <a href="contact.html" class="btn btn-primary" id="cta-btn" data-reveal="fade-up">Contact Me &rarr;</a>
         </div>
       </div>
     </section>
@@ -642,22 +364,13 @@
 
   </main>
 
-  <!-- ══ FOOTER ══ -->
   <footer role="contentinfo">
     <div class="container footer-inner">
-
       <div class="footer-social">
-        <a href="mailto:saravanan.ak@northeastern.edu" class="social-icon" aria-label="Email Akshiya" title="Email">
-          ✉
-        </a>
-        <a href="tel:+18573976030" class="social-icon" aria-label="Call Akshiya" title="Phone">
-          📱
-        </a>
-        <a href="#" class="social-icon" aria-label="LinkedIn profile" title="LinkedIn">
-          in
-        </a>
+        <a href="mailto:saravanan.ak@northeastern.edu" class="social-icon" aria-label="Email Akshiya" title="Email">✉</a>
+        <a href="tel:+18573976030" class="social-icon" aria-label="Call Akshiya" title="Phone">📱</a>
+        <a href="#" class="social-icon" aria-label="LinkedIn profile" title="LinkedIn">in</a>
       </div>
-
       <div class="footer-links">
         <a href="#hero" class="footer-link">Home</a>
         <a href="#education" class="footer-link">Education</a>
@@ -666,24 +379,13 @@
         <a href="#projects" class="footer-link">Projects</a>
         <a href="contact.html" class="footer-link">Contact</a>
       </div>
-
-      <p class="footer-copy">
-        &copy; 2025 Akshiya Vaibhavi Saravanan &nbsp;·&nbsp; Boston, MA
-      </p>
+      <p class="footer-copy">&copy; 2025 Akshiya Vaibhavi Saravanan &nbsp;·&nbsp; Boston, MA</p>
     </div>
   </footer>
 
-  <!-- ══ GSAP CDN ══ -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-  <!-- ══ BACK TO TOP BUTTON ══ -->
-  <button id="back-to-top" aria-label="Back to top">
-    ↑
-  </button>
-
-  <!-- ══ SHARED SCRIPT ══ -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
   <script src="script.js"></script>
 </body>
-
 </html>
