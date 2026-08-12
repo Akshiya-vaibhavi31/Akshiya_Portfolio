@@ -77,7 +77,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   overflow-x: hidden;
-  cursor: none; /* Hide default cursor — custom cursor is used */
+  cursor: none;
 }
 
 /* ── Selection ── */
@@ -350,7 +350,6 @@ section {
   overflow: hidden;
 }
 
-/* Background grid */
 #hero::before {
   content: '';
   position: absolute;
@@ -363,7 +362,6 @@ section {
   mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 40%, transparent 100%);
 }
 
-/* Radial glow in background */
 #hero::after {
   content: '';
   position: absolute;
@@ -385,7 +383,6 @@ section {
   align-items: center;
 }
 
-/* Hero left — text */
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -468,7 +465,6 @@ section {
   background: var(--clr-accent-dim);
 }
 
-/* Hero right — SVG character */
 .hero-character {
   display: flex;
   justify-content: center;
@@ -607,10 +603,11 @@ section {
   margin-bottom: var(--sp-sm);
 }
 
+/* ── CHANGE 1: Bigger font in experience timeline-detail ── */
 .timeline-detail {
-  font-size: 0.83rem;
+  font-size: 0.95rem;
   color: var(--clr-text-muted);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .timeline-badge {
@@ -687,11 +684,13 @@ section {
 /* ── PROJECTS SECTION ── */
 #projects { background: var(--clr-bg-card); }
 
+/* ── CHANGE 2: 2x2 grid layout for projects ── */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--sp-xl);
 }
+
 .project-card {
   background: var(--clr-bg);
   border: 1px solid var(--clr-border);
@@ -743,10 +742,11 @@ section {
   margin-top: -var(--sp-xs);
 }
 
+/* ── CHANGE 3: Bigger font in project descriptions ── */
 .project-desc {
-  font-size: 0.875rem;
+  font-size: 0.98rem;
   color: var(--clr-text-muted);
-  line-height: 1.75;
+  line-height: 1.8;
   flex: 1;
 }
 
@@ -809,9 +809,7 @@ section {
   box-shadow: 0 0 20px var(--clr-accent-glow);
 }
 
-.cert-icon {
-  font-size: 1.5rem;
-}
+.cert-icon { font-size: 1.5rem; }
 
 .cert-name {
   font-size: 0.9rem;
@@ -1125,12 +1123,10 @@ footer {
   font-size: 0.8rem;
   color: var(--clr-text-muted);
   text-align: center;
-  display: none; /* shown via JS if EmailJS fails */
+  display: none;
 }
 .direct-email-fallback.visible { display: block; }
-.direct-email-fallback a {
-  color: var(--clr-accent-light);
-}
+.direct-email-fallback a { color: var(--clr-accent-light); }
 
 /* ── REDUCED MOTION ── */
 @media (prefers-reduced-motion: reduce) {
@@ -1149,19 +1145,12 @@ footer {
     text-align: center;
     gap: var(--sp-2xl);
   }
-
   .hero-character { order: -1; }
   .hero-text { align-items: center; }
   .hero-cta { justify-content: center; }
   .speech-bubble { right: 0%; top: -8%; }
-
-  .contact-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-  }
+  .contact-layout { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 700px) {
@@ -1169,14 +1158,10 @@ footer {
     --sp-4xl: 4rem;
     --sp-3xl: 3rem;
   }
-
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
-
   .container { padding-inline: var(--sp-lg); }
-
   .hero-name { font-size: clamp(2rem, 10vw, 3rem); }
-
   .projects-grid { grid-template-columns: 1fr; }
   .certs-grid { grid-template-columns: repeat(2, 1fr); }
   .skills-grid { grid-template-columns: 1fr; }
@@ -1247,7 +1232,6 @@ footer {
   margin: 0 auto;
 }
 
-/* Glow backdrop */
 .photo-glow {
   position: absolute;
   width: 320px;
@@ -1263,7 +1247,6 @@ footer {
   100% { transform: scale(1.1); opacity: 0.8; }
 }
 
-/* The circular photo itself */
 .photo-circle {
   position: relative;
   width: 320px;
@@ -1293,9 +1276,7 @@ footer {
   transition: opacity 0.3s;
 }
 
-.photo-placeholder #hero-photo {
-  display: none;
-}
+.photo-placeholder #hero-photo { display: none; }
 
 .photo-initials {
   display: none;
@@ -1306,9 +1287,7 @@ footer {
   letter-spacing: 0.05em;
 }
 
-.photo-placeholder .photo-initials {
-  display: block;
-}
+.photo-placeholder .photo-initials { display: block; }
 
 /* Orbiting Rings */
 .orbit-ring {
@@ -1332,11 +1311,8 @@ footer {
   animation-direction: reverse;
 }
 
-@keyframes orbitSpin { 
-  to { transform: rotate(360deg); } 
-}
+@keyframes orbitSpin { to { transform: rotate(360deg); } }
 
-/* Orbit Emojis on the border */
 .orbit-emoji {
   position: absolute;
   font-size: 1.2rem;
