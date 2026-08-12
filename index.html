@@ -14,6 +14,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    @media (max-width: 768px) {
+      #projects-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
 </head>
 <body>
 
@@ -141,6 +147,19 @@
         <div class="section-divider" data-reveal="fade-left"></div>
         <div class="skills-grid" id="skills-grid">
           <div class="skill-category" data-reveal="scale-in">
+            <p class="skill-cat-label">AI &amp; Information Retrieval</p>
+            <div class="skill-pills">
+              <span class="skill-pill">LLMs</span>
+              <span class="skill-pill">RAG</span>
+              <span class="skill-pill">Prompt Engineering</span>
+              <span class="skill-pill">Sentence Transformers</span>
+              <span class="skill-pill">Semantic Search</span>
+              <span class="skill-pill">Hybrid Retrieval</span>
+              <span class="skill-pill">Vector Embeddings</span>
+              <span class="skill-pill">FAISS</span>
+            </div>
+          </div>
+          <div class="skill-category" data-reveal="scale-in">
             <p class="skill-cat-label">Programming &amp; Querying</p>
             <div class="skill-pills"><span class="skill-pill">Python</span><span class="skill-pill">SQL</span><span class="skill-pill">R</span><span class="skill-pill">Java</span><span class="skill-pill">C++</span></div>
           </div>
@@ -175,7 +194,7 @@
         <p class="section-label" data-reveal="fade-left">03.</p>
         <h2 class="section-heading" id="exp-heading" data-reveal="fade-left">Experience</h2>
         <div class="section-divider" data-reveal="fade-left"></div>
-        <div class="timeline" id="exp-timeline">
+        <div class="timeline" id="exp-timeline" style="font-size:1.08rem;line-height:1.85;">
 
           <div class="timeline-item" data-reveal="timeline">
             <div class="timeline-dot"></div>
@@ -233,7 +252,7 @@
         <h2 class="section-heading" id="proj-heading" data-reveal="fade-left">Projects</h2>
         <div class="section-divider" data-reveal="fade-left"></div>
 
-        <div class="projects-grid" id="projects-grid">
+        <div class="projects-grid" id="projects-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;font-size:1.02rem;">
 
           <!-- Testimonia — 01 -->
           <article class="project-card" id="proj-1" data-reveal="card" aria-label="Testimonia project">
@@ -242,17 +261,19 @@
             <h3 class="project-title">Testimonia</h3>
             <p class="project-subtitle">Clinical Trial &amp; Medical Literature RAG Assistant</p>
             <p class="project-desc">
-              Citation-grounded RAG system over <strong style="color:var(--clr-white)">585 clinical trials and 578 PubMed abstracts</strong> spanning hypertension, type 2 diabetes, and breast cancer.
-              Implemented hybrid retrieval (BM25 + semantic search via Reciprocal Rank Fusion) with cross-encoder reranking, achieving <strong style="color:var(--clr-white)">87% Recall@5</strong> and <strong style="color:var(--clr-white)">90.6% refusal decision accuracy</strong>.
-              Built independent citation verification with <strong style="color:var(--clr-white)">0.0% fabrication rate</strong> across all evaluation runs, including a live-tested defense against prompt injection in retrieved medical documents.
-              Full-stack: FastAPI backend, SQLite persistence, dark-theme frontend, Docker, and GitHub Actions CI/CD validated by an 81-test suite.
+              Built a citation-grounded RAG system over <strong style="color:var(--clr-white)">585 clinical trials and 578 PubMed abstracts</strong> spanning hypertension, type 2 diabetes, and breast cancer — achieving <strong style="color:var(--clr-white)">87% Recall@5</strong> and <strong style="color:var(--clr-white)">75.9% faithfulness</strong> on a 32-question evaluation set covering adversarial and unanswerable cases.
+              Designed a hybrid retrieval pipeline combining BM25 keyword search and semantic search via Reciprocal Rank Fusion, with cross-encoder reranking and explicit source-ID pinning — raising refusal decision accuracy from 53% to <strong style="color:var(--clr-white)">90.6%</strong> through iterative evaluation-driven improvements.
+              Implemented independent citation verification achieving a <strong style="color:var(--clr-white)">0.0% fabrication rate</strong> across every evaluation run. Built tiered severity logic: fabricated sources trigger a hard refusal, while unconfirmed numbers receive a caveat — preserving otherwise-valid answers. Validated a live defense against prompt injection embedded in retrieved medical documents.
+              Delivered a complete full-stack system: FastAPI backend with 7 REST endpoints, Pydantic validation, rate limiting, SQLite persistence, dark-theme multi-section frontend, containerized with Docker, and a GitHub Actions CI/CD pipeline validated by an <strong style="color:var(--clr-white)">81-test automated suite</strong> that caught real integration bugs before production.
             </p>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">FastAPI</span>
               <span class="project-tag">RAG</span>
+              <span class="project-tag">Hybrid Retrieval</span>
               <span class="project-tag">BM25 + Semantic Search</span>
               <span class="project-tag">Gemini API</span>
+              <span class="project-tag">Sentence Transformers</span>
               <span class="project-tag">SQLite</span>
               <span class="project-tag">Docker</span>
               <span class="project-tag">GitHub Actions</span>
@@ -273,9 +294,9 @@
             <h3 class="project-title">ScholarLens</h3>
             <p class="project-subtitle">AI-Powered Research Intelligence Platform</p>
             <p class="project-desc">
-              Full-stack research discovery platform built with FastAPI, TypeScript, PostgreSQL, and Docker.
-              Implements a semantic search pipeline using <strong style="color:var(--clr-white)">Sentence Transformers + FAISS</strong> (384-dim embeddings) for similarity retrieval and intelligent paper recommendations.
-              Features PDF text extraction, rich metadata management, REST APIs, database indexing, and intelligent caching.
+              Developed a full-stack research discovery platform using <strong style="color:var(--clr-white)">FastAPI, TypeScript, PostgreSQL, and Docker</strong> for academic paper ingestion and intelligent discovery — designed to support scalable, low-latency research search workflows.
+              Built a semantic retrieval pipeline using <strong style="color:var(--clr-white)">Sentence Transformers and FAISS</strong> over 384-dimensional embeddings, combining embedding-based similarity search with structured metadata filtering to rank papers and improve search relevance beyond simple keyword matching.
+              Implemented PDF text extraction, rich metadata management, REST APIs, database indexing, and intelligent caching to handle the full ingestion-to-retrieval pipeline without performance bottlenecks.
             </p>
             <div class="project-tags">
               <span class="project-tag">FastAPI</span>
@@ -284,19 +305,21 @@
               <span class="project-tag">Docker</span>
               <span class="project-tag">FAISS</span>
               <span class="project-tag">Sentence Transformers</span>
+              <span class="project-tag">Semantic Search</span>
+              <span class="project-tag">Vector Embeddings</span>
             </div>
           </article>
 
           <!-- Chronic Disease Prediction — 03 -->
           <article class="project-card" id="proj-3" data-reveal="card" aria-label="Chronic disease prediction project">
-            <p class="project-number">03 / Research Paper</p>
+            <p class="project-number">03 / Conference Paper</p>
             <span class="project-badge">Jan – Apr 2025</span>
             <h3 class="project-title">Chronic Disease Prediction</h3>
-            <p class="project-subtitle">Integrating Clinical &amp; Biochemical Data</p>
+            <p class="project-subtitle">Integrating Clinical &amp; Biochemical Data for Accurate Prediction</p>
             <p class="project-desc">
-              Co-authored conference paper. Integrated multi-source clinical and biochemical datasets to build an ML model for chronic disease prediction.
-              Delivered a full pipeline: data cleaning, EDA, feature engineering, and model training with Scikit-learn.
-              Visualized insights and findings through interactive <strong style="color:var(--clr-white)">Power BI</strong> dashboards.
+              Co-authored a conference paper integrating clinical and biochemical datasets from multiple sources to build a machine learning model for <strong style="color:var(--clr-white)">chronic disease prediction</strong> — addressing the challenge of working with messy, real-world healthcare data across heterogeneous formats.
+              Performed comprehensive data cleaning, preprocessing, exploratory data analysis, and feature engineering to structure the raw datasets for analysis and ensure consistency across sources prior to modeling.
+              Developed and evaluated predictive models using <strong style="color:var(--clr-white)">Python, Pandas, NumPy, and Scikit-learn</strong>, documenting the full methodology and experimental results for peer publication. Visualized findings through interactive <strong style="color:var(--clr-white)">Power BI</strong> dashboards to communicate insights to a non-technical audience.
             </p>
             <div class="project-tags">
               <span class="project-tag">Python</span>
@@ -305,6 +328,8 @@
               <span class="project-tag">Scikit-learn</span>
               <span class="project-tag">Power BI</span>
               <span class="project-tag">EDA</span>
+              <span class="project-tag">Feature Engineering</span>
+              <span class="project-tag">Healthcare ML</span>
             </div>
           </article>
 
@@ -313,18 +338,20 @@
             <p class="project-number">04 / Conference Paper</p>
             <span class="project-badge">Jan – Apr 2024</span>
             <h3 class="project-title">EyeStressDetect</h3>
-            <p class="project-subtitle">Eye Gaze-Based Stress Detection (IntelEye)</p>
+            <p class="project-subtitle">Eye Gaze-Based Stress Detection During Video Viewing (IntelEye)</p>
             <p class="project-desc">
-              Co-authored conference paper proposing <strong style="color:var(--clr-white)">"IntelEye"</strong> — an ML approach for real-time stress classification from eye-gaze telemetry (pupil diameter, fixation duration, fixation dispersion, blink duration) at 60 Hz.
-              Engineered baseline thresholds from calm-video sessions. Used <strong style="color:var(--clr-white)">K-Nearest Neighbors</strong> for classification and gaze-region localization.
-              Validated statistical significance via Welch two-sample t-test (p &lt; 0.05).
+              Co-authored a conference paper proposing <strong style="color:var(--clr-white)">IntelEye</strong> — an ML model classifying stress states from eye-gaze telemetry (pupil diameter, fixation duration, fixation dispersion, blink duration) captured via a remote eye-tracking device sampling at <strong style="color:var(--clr-white)">60 Hz</strong>.
+              Extracted eye-tracking features from raw gaze data and engineered baseline thresholds from calm-video sessions to isolate stress-induced deviations in physiological signals — creating a reproducible benchmark for evaluating model output.
+              Applied <strong style="color:var(--clr-white)">K-Nearest Neighbors</strong> for stress state classification using the engineered eye-gaze features, and validated results with a <strong style="color:var(--clr-white)">Welch two-sample t-test</strong> confirming statistically significant differences between calm and stressful conditions (p &lt; 0.05).
             </p>
             <div class="project-tags">
               <span class="project-tag">Python</span>
               <span class="project-tag">KNN</span>
-              <span class="project-tag">Eye Gaze</span>
+              <span class="project-tag">Eye Tracking</span>
               <span class="project-tag">Signal Processing</span>
+              <span class="project-tag">Feature Engineering</span>
               <span class="project-tag">Statistics</span>
+              <span class="project-tag">ML Classification</span>
             </div>
           </article>
 
