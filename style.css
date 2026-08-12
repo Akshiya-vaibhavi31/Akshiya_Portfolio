@@ -689,10 +689,9 @@ section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--sp-xl);
 }
-
 .project-card {
   background: var(--clr-bg);
   border: 1px solid var(--clr-border);
